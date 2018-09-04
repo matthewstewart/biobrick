@@ -42,4 +42,26 @@ if (hasArgs) {
       biobrick.log('Example:\nbiobrick install bionet');
     }  
   }
+  // action - update
+  if (action === 'update') {
+    // if has more than one arg
+    if (args.length > 1) {
+      // second arg is noun
+      let noun = args[1];
+      // update BioNet
+      if (noun === 'bionet') {
+        biobrick.log(`Updating ${'BioNet'.cyan}...`);
+        biobrick.updateBionet((error, success) => {
+          if (error) {
+            biobrick.log('Unable To Complete Update.');
+          } else if (success) {
+            biobrick.log('Completed Update.');
+          }
+        });
+      }
+    } else {
+      biobrick.error('Update What?');
+      biobrick.log('Example:\nbiobrick update bionet');
+    }     
+  }
 }

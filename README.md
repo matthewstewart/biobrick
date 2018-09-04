@@ -15,3 +15,8 @@ Install a new BioNet Node as a subdirectory:
 biobrick install bionet
 ```
 
+### Update Bionet Node
+From within the ```bionet-new``` root folder:
+```
+biobrick update bionet
+```
