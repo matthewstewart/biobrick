@@ -1,6 +1,6 @@
 {
   "name": "biobrick",
-  "version": "0.0.2",
+  "version": "0.0.3",
   "description": "Work In Progress. A BioBricks BioNet Scaffolding Tool.",
   "main": "./lib/biohack.js",
   "bin": {
